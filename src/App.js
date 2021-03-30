@@ -51,9 +51,14 @@ function App() {
         <div className="display">{result}</div>
         <div className="buttons">
           <div className="leftSide">
-            <div className="clean">AC</div>
-            <div id="seeResult" onClick={perforOperation}>
-              =
+            <div className="topBar">
+              <div 
+                className="clean"
+                >AC
+              </div>
+              <div id="seeResult" onClick={perforOperation}>
+                =
+              </div>
             </div>
             <div className="numbers">
               {numbers.map((val, key)=> {

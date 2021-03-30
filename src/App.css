@@ -52,8 +52,12 @@
   height: 100%;
 }
 
-#seeResult {
-  width: 238px;
+.topBar {
+  display: flex;
+}
+
+#seeResult, .clean {
+  width: 119px;
   height: 78px;
   display: flex;
   justify-content: center;
@@ -61,10 +65,17 @@
   color: #6B1CB8
 }
 
-#seeResult:hover {
+#seeResult:hover{
   -webkit-transform: scale(1.7);
   -ms-transform: scale(1.7);
   transform: scale(1.7);
+  color: #774ea0;
+}
+
+.clean:hover {
+  -webkit-transform: scale(1.3);
+  -ms-transform: scale(1.3);
+  transform: scale(1.3);
   color: #774ea0;
 }
 
