@@ -1,38 +1,105 @@
 .App {
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fdfdfd;
+  font-family: sans-serif;
+  height: 100vw;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.calculator {
   display: flex;
   flex-direction: column;
+  width: 320px;
+  height: 400px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0px 0px 30px 0px rgba(159,159,159,0.56);
+}
+
+.calculator:hover {
+  cursor: pointer;
+}
+
+.display {
+  width: 320px;
+  height: 70px;
+  background-color: #774ea0;
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 8px 8px 0 0;
 }
 
-.App-link {
-  color: #61dafb;
+.buttons {
+  display: flex;
+  flex-direction: row;
+  width: 320px;
+  height: 320px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.leftSide {
+  flex: 75%;
+  height: 100%;
+}
+
+.rightSide {
+  flex: 35%;
+  height: 100%;
+}
+
+#seeResult {
+  width: 238px;
+  height: 78px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #6B1CB8
+}
+
+#seeResult:hover {
+  -webkit-transform: scale(1.7);
+  -ms-transform: scale(1.7);
+  transform: scale(1.7);
+  color: #774ea0;
+}
+
+.numbers {
+  width: 240px;
+  height: 240px;
+
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#individualNumber, #operations {
+  color: #7A7A7A;
+  font-weight: 900;
+  width: 78px;
+  height: 78px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#individualNumber:hover {
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+  color: #9c9c9c;
+}
+
+#operations {
+  color: #6B1CB8;
+}
+
+#operations:hover {
+  -webkit-transform: scale(1.5);
+  -ms-transform: scale(1.5);
+  transform: scale(1.5);
+  color: #774ea0;
 }
